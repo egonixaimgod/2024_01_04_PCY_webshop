@@ -6,20 +6,25 @@
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        style="width: 61vh;">
+                    <button class="btn btn-outline-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg></button>
+                </form>
                 <li class="nav-item"><a class="nav-link" routerLink="/products" routerLinkActive="active"
                         ariaCurrentWhenActive="page">Termékek</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active"
                         ariaCurrentWhenActive="page">Rólunk</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/cart" routerLinkActive="active"
-                        ariaCurrentWhenActive="page">Kosár</a></li>
                 <li class="nav-item"><a class="nav-link" routerLink="/login" routerLinkActive="active"
                         ariaCurrentWhenActive="page">Bejelentkezés</a></li>
                 <li class="nav-item me-2"><a class="nav-link" routerLink="/signup" routerLinkActive="active"
                         ariaCurrentWhenActive="page">Regisztráció</a></li>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
+                <li class="nav-item"><a class="nav-link" routerLink="/cart" routerLinkActive="active"
+                        ariaCurrentWhenActive="page">Kosár</a></li>
             </ul>
         </div>
     </div>
